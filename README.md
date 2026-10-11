@@ -1,5 +1,7 @@
 # Playtron team-review prototype
 
+[Open the public team-review beta](https://playtron-team-review.nutmeg-snow-7003.chatgpt.site/#pack=omma).
+
 A free static review candidate for playing Playtronica sound packs with Playtron, a keyboard or touch.
 
 Pipeline: qualified immutable runtime → three hash-checked distribution files → pinned public release → native Sites hosting wrapper → live-origin checks → human sound/style/device review.
@@ -11,6 +13,7 @@ Pipeline: qualified immutable runtime → three hash-checked distribution files 
 - `site/release.json` — source identity, hashes and review limits.
 - `SHA256SUMS` — exact expected entry, worker and original sound-library hashes.
 - `README.md` — publishing and review handoff.
+- `.gitignore` — local caches, build output and sound-library copies stay outside Git.
 
 ## Data
 
@@ -27,3 +30,5 @@ This is a team-review beta, not an approved physical-device, listening, beginner
 ## Git and rollback
 
 Only intentional, qualified distributions are committed. The development repository remains private. No scheduled commits or deployments. Retain candidate releases and previous artifacts; a new runtime requires matching fresh gates. First deployment has no previous public version. Record failures and withdraw a broken first entry rather than claim a passing release.
+
+Checked 2026-10-12 Europe/Lisbon: the exact deployed player passes isolated native Chrome 154 and WebKit 27.2 checks, including all 48 pack auditions per engine, touch-view layouts and saved-pack offline PCM/reopening. This is desktop-engine software evidence; physical phone, hardware, MIDIWeb Browser and hearing/style/novice acceptance remain pending. The initial live start timeout stays recorded internally; later cold/full checks pass without a player/audio change. Delivery preserves exact shell bytes with no-transform, while sound requests remain explicit ranges.

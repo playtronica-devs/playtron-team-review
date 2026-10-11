@@ -1,13 +1,17 @@
 {
-  "checkedAt": "2026-10-11T22:11:48.633016+00:00",
+  "checkedAt": "2026-10-11T23:16:30.677Z",
   "sourceCommit": "0371ee123fc07383911e9fd921ca5f81b6df7749",
   "candidate": "I75",
   "softwareQualification": "PASS_LOCAL_SOURCE_AND_EXACT_ARTIFACT",
-  "liveOriginQualification": "PENDING",
+  "liveOriginQualification": "PASS_NATIVE_DESKTOP_CHROME_WEBKIT_TOUCH_FIXTURES",
   "humanSoundStyleDeviceNoviceApproval": "PENDING",
   "sha256": {
     "index.html": "8fd187eb776c1fba1a990568cb25bf33475977f8d96d77717ee89e695aafa513",
     "playtron-sw.js": "13ec470bb7115c9191cffb7204dd9b69ce0ceb9f0237bfcbf7acf465234cab94",
     "playtron-library-4462976d6ecf.playtron": "fd0d3edd4677b7742783bdaf1180dbae5ddcbb8041b4cfae189857f05fce474a"
-  }
+  },
+  "liveURL": "https://playtron-team-review.nutmeg-snow-7003.chatgpt.site/#pack=omma",
+  "originalPackAuditionsPerEngine": 48,
+  "physicalPhoneMIDIWebHardwareAcceptance": "PENDING",
+  "knownLimit": "One initial public startup timeout is retained internally; subsequent cold and full replays pass. Physical and listening approval remain pending."
 }
